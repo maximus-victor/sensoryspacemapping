@@ -1,0 +1,66 @@
+# TODO
+# webers law -> linear -> story: probably more complex -> we are gonna use this dataset to investigate this.
+# we have this data -> we have this ide -> does it work at all -> THIS IS A PILOT
+# how does it work? How does it relate?
+# Facet Grid -> plot all models
+# -> do it for 1, 2, 3, 4 paras
+# LLH for the whole dataset -> sum of all
+# 64 likelihoods of those
+# more parameters -> llh should always go up
+# BIC -> for model comparison
+# AIC as well?
+--> function that takes model, #params, #subj id
+# -> cross validation of likelihoods (very last thing)
+# which parameter amout is best for every subject -> lets look at the average
+# pipe the results to a file
+
+
+
+Poly Probit initial parameters
+[[15.],
+[15., .5],
+[1e-3, 1., 2],
+[1e-3, 1., 2, 1e-3],
+[1e-3, 1., 2, 1e-3, 1e-5],
+[1e-3, 1., 2, 1e-3, 1e-5, 1e-8],
+[1e-3, 1., 2, 1e-3, 1e-5, 1e-8, 1e-8],
+[1e-3, 1., 2, 1e-3, 1e-3, 1e-8, 1e-8, 1e-8]]
+
+Efficient coding initial parameters
+[[3.0],
+[1e-3, 1.],
+[1e-3, 1., 2],
+[1e-3, 1., 2, 1e-3],
+[1e-3, 1., 2, 1e-3, 1e-5],
+[1e-3, 1., 2, 1e-3, 1e-5, 1e-8],
+[1e-3, 1., 2, 1e-3, 1e-5, 1e-8, 1e-8],
+[1e-3, 1., 2, 1e-3, 1e-3, 1e-8, 1e-8, 1e-8]]
+
+Efficient individual coding initial parameters
+[[3.0, 3.0],
+[1e-3, 1., 1e-3, 1.],
+[1e-3, 1., 2, 1e-3, 1., 2],
+[1e-3, 1., 2, 1e-3, 1e-3, 1., 2, 1e-3],
+[1e-3, 1., 2, 1e-3, 1e-5, 1e-3, 1., 2, 1e-3, 1e-5],
+[1e-3, 1., 2, 1e-3, 1e-5, 1e-8, 1e-3, 1., 2, 1e-3, 1e-5, 1e-8],
+[1e-3, 1., 2, 1e-3, 1e-5, 1e-8, 1e-8, 1e-3, 1., 2, 1e-3, 1e-5, 1e-8, 1e-8],
+[1e-3, 1., 2, 1e-3, 1e-3, 1e-8, 1e-8, 1e-8, 1e-3, 1., 2, 1e-3, 1e-3, 1e-8, 1e-8, 1e-8]]
+
+
+fit_mean_function inits:
+[[1e-3, 8.],
+[1e-3, 1., 8.],
+[3., 1., 1e-3, 8.],
+[3., 1., 1e-3, 1e-5, 8.],
+[3., 1., 1e-3, 1e-5, 1e-5, 8.],
+[3., 1., 1e-3, 1e-5, 1e-6, 1e-6, 8.],
+[3., 1., 1e-3, 1e-5, 1e-6, 1e-6, 1e-7, 8.]]
+
+fit_mean_variance_pred inits:
+[[3., 3.],
+[3., 3., 3.],
+[3., 3., 3., 3.],
+[3., 3., 3., 3., 3.],
+[3., 3., 3., 3., 3., 3.],
+[3., 3., 3., 3., 3., 3., 3.],
+[3., 3., 3., 3., 3., 3., 3., 3.]]

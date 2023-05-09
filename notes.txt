@@ -15,6 +15,41 @@
 # pipe the results to a file
 
 
+# 80 - 20 CV
+# take parameters on the 20 left out trials
+# look at predictions of
+# autocorrelation
+# only model for one subject
+# every fith trial out
+
+# stop with the other models - only look at efficient coding v1 and v2
+# brain is representing the two stimuli seperately - what happens if we compare them
+
+# maybe look at derivatives for the interesting cases
+
+# plot all the sigma polynomials in one plot -> for interesting cases
+
+
+# plot a histogram for the lowest values for every subject - how many subjects score best with which parameter amount.
+
+# over vs underfitting
+# -> cv, AIC, BIC
+# -> let us not fit noise/assume we do not fit noise
+# --> out of sample prediction
+
+# --> do not look at LLH within the dataset
+
+# histogram over the max's
+
+TODO: UPDATE
+- opt_dyn_noise_sigma
+- opt_dyn_mem_noise_sigma
+- dyn_noise_pred_choice
+- dyn_noise_mem_pred_choice
+
+- model_comp_TEST_LL --> LOOK NEXT
+- dyn_noise_histogram_TEST_LL
+- dyn_noise_mem_histogram_TEST_LL
 
 Poly Probit initial parameters
 [[15.],

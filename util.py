@@ -76,11 +76,11 @@ def make_softplus_poly(pars):
 
 
 def calculate_bic(k, n, nll):
-    return k * np.log(n) - 2 * (-nll)
+    return k * np.log(n) - 2 * nll
 
 
 def calculate_aic(k, nll):
-    return 2 * k - 2 * (-nll)
+    return 2 * k - 2 * nll
 
 
 poly_probit_inits = [[15.],

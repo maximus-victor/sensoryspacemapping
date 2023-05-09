@@ -8,9 +8,15 @@ def plot_poly(pars):
     plt.plot(x, make_poly(pars)(x))
     plt.axvline(0.0, c='k', ls='--')
 
-def plot_softplus_poly(pars, xmin=0, xmax=60, ylim=60, color=''):
+def plot_softplus_poly(pars, xmin=0, xmax=60, ylim=60, color='', axis=plt, alpha=0.5):
     x = np.linspace(xmin, xmax, 100)
-    plt.plot(x, make_softplus_poly(pars)(x), color)
+    axis.plot(x, make_softplus_poly(pars)(x), color, alpha=alpha)
+    axis.axvline(0.0, c='k', ls='--')
+    plt.ylim(-2, ylim)
+
+def plot_ply(pars, xmin=0, xmax=60, ylim=60, color=''):
+    x = np.linspace(xmin, xmax, 100)
+    plt.plot(x, make_poly(pars)(x), color)
     plt.axvline(0.0, c='k', ls='--')
     plt.ylim(0, ylim)
 
